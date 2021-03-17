@@ -7,7 +7,7 @@ RUN wget https://phoenixnap.dl.sourceforge.net/project/jogetworkflow/joget-linux
 
 RUN unzip /opt/joget/apache-tomcat-8.5.58/webapps/jw.war -d /opt/joget/apache-tomcat-8.5.58/webapps/jw && \
     rm /opt/joget/apache-tomcat-8.5.58/webapps/jw.war
-COPY ./Owasp.CsrfGuard.properties /opt/joget/apache-tomcat-8.5.58/webapps/WEB-INF/classes
+COPY ./Owasp.CsrfGuard.properties /opt/joget/apache-tomcat-8.5.58/webapps/jw/WEB-INF/classes
 COPY ./app_datasource-profile.template /opt/joget/data
 COPY ./app_datasource.template /opt/joget/data
 COPY ./run.sh /opt/joget
