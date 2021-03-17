@@ -1,5 +1,5 @@
 FROM openjdk:8u282-jre-slim-buster
-RUN apt-get update && apt-get install -y unzip
+RUN apt-get update && apt-get install -y unzip wget
 RUN wget https://phoenixnap.dl.sourceforge.net/project/jogetworkflow/joget-linux-7.0.15.tar.gz && \
     tar zxvf joget-linux-7.0.15.tar.gz && \
     rm joget-linux-7.0.15.tar.gz && \
